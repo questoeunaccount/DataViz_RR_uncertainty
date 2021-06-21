@@ -18,6 +18,9 @@ min_df<-as.matrix(min_df)
 rownames(min_df) = letters[1:5]
 colnames(min_df) = letters[1:5]
 
+chordDiagram(t(min_df))
+title("Minimum interaction")
+
 chordDiagram(min_df)
 chordDiagram(as.matrix(mean_df))
 chordDiagram(as.matrix(max_df))
